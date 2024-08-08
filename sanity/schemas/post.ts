@@ -29,7 +29,7 @@ export const post = {
         name: "excerpt",
         title: "Resumo",
         type: "text",
-        validation: (Rule: Rule) => Rule.max(500).error("Limite de 500 caracteres"),
+        validation: (Rule: Rule) => Rule.max(200).error("Limite de 200 caracteres"),
       },
       {
         name: "body",
@@ -42,6 +42,12 @@ export const post = {
             fields: [{ type: "text", name: "alt", title: "Alt" }],
           },
         ],
+      },
+      {
+        name: "banner",
+        title: "imagem para capa",
+        type: "image",
+        validation: (Rule: Rule) => Rule.required().error("Obrigatório"),
       },
       {
         name: "tags",

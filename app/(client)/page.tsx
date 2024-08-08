@@ -10,15 +10,22 @@ async function getPosts() {
   slug,
   publishedAt,
   excerpt,
+  banner,
+  tags[]-> {
+    _id,
+    slug,
+    name
+  }
 }
 `;
   const data = await client.fetch(query);
   return data;
 }
 
+export const revalidate = 60;
+
 export default async function Home() {
   const posts: Post[] = await getPosts();
-  console.log(posts, "posts");
   return (
     <div>
       <Header title="Reviews" tags />

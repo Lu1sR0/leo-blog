@@ -15,17 +15,16 @@ const Navbar = () => {
             <span className="text-purple-500">Blog</span>
           </div>
         </Link>
-        <div>
-          {" "}
-          {/* mudar isso aq depois pra ser uma página somente do blog dele  */}
+        {/* <div className="flex items-center"> Ajuste aqui 
           <a 
             href="http://lrportifolio.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-lg dark:text-amber-50"
           >
             Sobre mim
           </a>
-        </div>
+        </div> */}
         <ThemeSwitch />
       </div>
     </div>
