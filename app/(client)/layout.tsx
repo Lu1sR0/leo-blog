@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { ThemeProvider } from "next-themes";
-import { Provider } from "./utils/Provider";
+import { Provider } from "../utils/Provider";
 
 //const inter = Inter({ subsets: ["latin"] });
 const firaCode = Fira_Code({ subsets: ["latin"] });
