@@ -18,7 +18,7 @@ const Navbar = () => {
         <div>
           {" "}
           {/* mudar isso aq depois pra ser uma página somente do blog dele  */}
-          <a
+          <a 
             href="http://lrportifolio.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
