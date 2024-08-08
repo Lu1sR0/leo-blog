@@ -10,14 +10,14 @@ export const post = {
       name: "title",
       title: "Título",
       type: "string",
-      validation: (Rule: Rule) => Rule.required().error("Required"),
+      validation: (Rule: Rule) => Rule.required().error("Ei vai criar um post sem Título?😐"),
     },
     {
       name: "slug",
       title: "Slug",
       type: "slug",
       options: { source: "title" },
-      validation: (Rule: Rule) => Rule.required().error("Required"),
+      validation: (Rule: Rule) => Rule.required().error("Obrigatório"),
     },
     {
       name: "publishedAt",
@@ -27,13 +27,13 @@ export const post = {
     },
     {
         name: "excerpt",
-        title: "Excerpt",
+        title: "Resumo",
         type: "text",
-        validation: (Rule: Rule) => Rule.max(200).error("Max 200 characters"),
+        validation: (Rule: Rule) => Rule.max(500).error("Limite de 500 caracteres"),
       },
       {
         name: "body",
-        title: "Body",
+        title: "Crie seu Post",
         type: "array",
         of: [
           { type: "block" },
@@ -42,6 +42,12 @@ export const post = {
             fields: [{ type: "text", name: "alt", title: "Alt" }],
           },
         ],
+      },
+      {
+        name: "tags",
+        title: "Tags",
+        type: "array",
+        of: [{ type: "reference", to: [{ type: "tag" }] }],
       },
   ],
 };
