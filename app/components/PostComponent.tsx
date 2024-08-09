@@ -16,7 +16,6 @@ function dataAtualFormatada(dateString: string){
     const anoF = data.getFullYear();
     return `${diaF}/${mesF}/${anoF}`;
 }
-
 const font = Lilita_One({ weight: "400", subsets: ["latin"] });
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -65,3 +64,4 @@ hover:bg-purple-500
 hover:text-white
 hover:dark:bg-gray-950
 `;
+

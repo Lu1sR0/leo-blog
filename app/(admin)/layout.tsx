@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata = {
   title: "Studio do Leo",
   description: "Local onde você pode criar seus posts",
+  icons: {
+    icon: '/blog-writing-svgrepo-com.svg', // /public path
+  },
 };
 
 export default function RootLayout({
