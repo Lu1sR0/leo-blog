@@ -6,6 +6,7 @@ import React from "react";
 import Link from "next/link";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { urlFor } from "@/sanity/lib/image";
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
@@ -25,6 +26,8 @@ interface Params {
     slug: string;
   };
 }
+
+export const revalidate = 60;
 
 async function getPost(slug: string) {
   const query = `
@@ -48,6 +51,10 @@ async function getPost(slug: string) {
 
 const page = async ({ params }: Params) => {
   const post: Post = await getPost(params?.slug);
+  if(!post){
+    notFound();
+  }
+
   return (
     <div>
       <Header title={post?.title} />
