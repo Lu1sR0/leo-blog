@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Lilita_One, VT323 } from "next/font/google";
+import { Arvo, VT323 } from "next/font/google";
 import { Post } from "../utils/interface";
 
 interface Props {
@@ -16,7 +16,7 @@ function dataAtualFormatada(dateString: string){
     const anoF = data.getFullYear();
     return `${diaF}/${mesF}/${anoF}`;
 }
-const font = Lilita_One({ weight: "400", subsets: ["latin"] });
+const font = Arvo({ weight: "400", subsets: ["latin"] });
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
 const PostComponent = ({ post }: Props) => {

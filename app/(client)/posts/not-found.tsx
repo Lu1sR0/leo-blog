@@ -5,9 +5,9 @@ import React from "react";
 const NotFound = () => {
   return (
     <div>
-      <Header title="404 - Page Not Found" />
+      <Header title="404 - Página não encontrada" />
       <div>
-        <Link href="/">Return Home</Link>
+        <Link className="items-center" href="/">Voltar para o menu inicial</Link>
       </div>
     </div>
   );
