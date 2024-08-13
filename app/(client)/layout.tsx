@@ -32,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
+     <meta name="google-site-verification" content="Wvz4f2fpr7DyWaqO4QyRvw5HhI5VkCmJoNffcLhY9t4" />
       </head>
       <body
         className={`${Arvore.className} h-full bg-amber-50 text-indigo-950 dark:bg-slate-950 dark:text-amber-50 dark:selection:bg-purple-500`}

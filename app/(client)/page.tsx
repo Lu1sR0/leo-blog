@@ -27,6 +27,8 @@ export default async function Home() {
   const posts: Post[] = await getPosts();
   return (
     <div>
+      <head> <meta name="google-site-verification" content="Wvz4f2fpr7DyWaqO4QyRvw5HhI5VkCmJoNffcLhY9t4" /></head>
+     
       <Header title="Todos os Posts" />
       <div>
         {posts?.length > 0 &&

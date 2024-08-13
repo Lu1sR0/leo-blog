@@ -23,6 +23,7 @@ const page = async () => {
     return (
       <div>
         <Header title="Categorias" />
+        <head> <meta name="google-site-verification" content="Wvz4f2fpr7DyWaqO4QyRvw5HhI5VkCmJoNffcLhY9t4" /></head>
         <div>
           {tags?.length > 0 &&
             tags?.map((tag) => (
