@@ -1,37 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Diário Cinéfilo 🎥
 
-## Getting Started
+**Diário Cinéfilo** é um blog feito para um amigo meu de longa data chamado Leornado,este blog é voltado para críticas e artigos sobre cinema, desenvolvido para entusiastas do cinema. O projeto foi construído utilizando uma stack moderna e eficiente para garantir uma experiência rápida e fluida tanto para o usuário final quanto para o administrador do conteúdo.
 
-First, run the development server:
+## Tecnologias Utilizadas 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [**Next.js**](https://nextjs.org/docs) - Framework React para produção, focado em desempenho e SEO.
+- [**Tailwind CSS**](https://tailwindcss.com/docs) - Framework de CSS utilitário para estilização rápida e customizável.
+- [**Sanity.io**](https://www.sanity.io/docs) - Headless CMS para gerenciamento de conteúdo flexível e escalável.
+- [**TypeScript**](https://www.typescriptlang.org/docs/) - Superconjunto de JavaScript que adiciona tipagem estática.
+- [**React.js**](https://reactjs.org/docs/getting-started.html) - Biblioteca JavaScript para construção de interfaces de usuário.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades ✨
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Criação de artigos e críticas** com um editor intuitivo através do Sanity.io.
+- **Visualização rápida e responsiva** dos artigos, com design moderno usando Tailwind CSS.
+- **Navegação rápida** graças ao pré-carregamento de páginas com Next.js.
+- **SEO otimizado** para garantir que o conteúdo seja facilmente encontrado nos motores de busca.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Capturas de Tela 🖼️
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# leo-blog" 
+![](https://i.ibb.co/fqRDn6N/image.png)
+![](https://i.ibb.co/BPXkx67/imagem-2024-08-13-170619761.png)
