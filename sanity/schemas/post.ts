@@ -44,12 +44,6 @@ export const post = {
         ],
       },
       {
-        name: "banner",
-        title: "imagem para capa",
-        type: "image",
-        validation: (Rule: Rule) => Rule.required().error("Obrigatório"),
-      },
-      {
         name: "tags",
         title: "Tags",
         type: "array",

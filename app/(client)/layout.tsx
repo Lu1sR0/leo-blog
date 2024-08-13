@@ -14,10 +14,10 @@ const Arvore = Arvo({
 export const metadata: Metadata = {
   keywords: ["Blog", "Jogos", "Filmes", "Recomendações","Reviews","Opinião","Geek","Nerd","Anime","Cinema","Artigos"],
   openGraph: {
-    images: '/nerd-face-svgrepo-com.svg',
+    images: '/film-projector-svgrepo-com.svg',
   },
   icons: {
-    icon: '/nerd-face-svgrepo-com.svg', // /public path
+    icon: '/film-projector-svgrepo-com.svg', // /public path
   },
   title: "Diário Cinéfilo",
   description:

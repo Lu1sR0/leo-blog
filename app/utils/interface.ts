@@ -7,7 +7,6 @@ export interface Post {
     tags: Array<Tag>;
     _id: string;
     banner: string;
-
 }
 
 export interface Tag {

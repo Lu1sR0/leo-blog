@@ -15,7 +15,7 @@ const Header = ({ title = "", tags = false }: Props) => {
 
       {tags && (
         <div className="text-xs mt-2 hover:text-purple-500">
-          <Link href="/tags">Categorias</Link>
+          <Link href="/tags"></Link>
         </div>
       )}
     </header>

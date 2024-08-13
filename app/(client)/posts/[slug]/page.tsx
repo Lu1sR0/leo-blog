@@ -36,7 +36,6 @@ async function getPost(slug: string) {
   slug,
   publishedAt,
   excerpt,
-  banner,
   body,
   tags[]-> {
     _id,
@@ -51,7 +50,7 @@ async function getPost(slug: string) {
 
 const page = async ({ params }: Params) => {
   const post: Post = await getPost(params?.slug);
-  if(!post){
+  if (!post) {
     notFound();
   }
 

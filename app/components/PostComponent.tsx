@@ -26,7 +26,6 @@ const PostComponent = ({ post }: Props) => {
         <h2 className={`${font.className} text-2xl dark:text-slate-300`}>
           {post?.title}
         </h2>
-        {/* <img src={post?.banner} alt="imagem" style={{ width: '100%', height: 'auto' }} /> */}
         <p className={`${dateFont.className} my-2 text-purple-800`}>
           {dataAtualFormatada(post?.publishedAt)}
         </p>
@@ -41,7 +40,7 @@ const PostComponent = ({ post }: Props) => {
             key={tag?._id}
             className="mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900"
           >
-            #{tag?.name}
+            {tag?.name}
           </span>
         ))}
       </div>

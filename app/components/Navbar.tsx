@@ -27,20 +27,9 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="hidden md:flex space-x-10">
-          <Link href="/tags">
-            <div
-              className={`${font.className} text-2xl dark:text-amber-50 ${
-                pathname === "/tags"
-                  ? "text-purple-500 dark:text-purple-500"
-                  : "border-transparent hover:text-purple-500  dark:hover:text-purple-500"
-              }`}
-            >
-              Categorias
-            </div>
-          </Link>
           <Link href="/tags/criticas">
             <div
-              className={`${font.className} text-2xl dark:text-amber-50  ${
+              className={`${font.className} text-xl dark:text-amber-50  ${
                 pathname === "/tags/criticas"
                   ? "text-purple-500 dark:text-purple-500"
                   : "border-transparent  hover:text-purple-500  dark:hover:text-purple-500"
@@ -49,9 +38,20 @@ const Navbar = () => {
               Críticas
             </div>
           </Link>
+          <Link href="/tags/artigos">
+            <div
+              className={`${font.className} text-xl dark:text-amber-50  ${
+                pathname === "/tags/artigos"
+                  ? "text-purple-500 dark:text-purple-500"
+                  : "border-transparent  hover:text-purple-500  dark:hover:text-purple-500"
+              }`}
+            >
+              Artigos
+            </div>
+          </Link>
           <Link href="/tags/meus-filmes">
             <div
-              className={`${font.className} text-2xl dark:text-amber-50  ${
+              className={`${font.className} text-xl dark:text-amber-50  ${
                 pathname === "/tags/meus-filmes"
                   ? "text-purple-500 dark:text-purple-500"
                   : "border-transparent hover:text-purple-500 dark:hover:text-purple-500"
@@ -61,9 +61,20 @@ const Navbar = () => {
               <span> filmes</span>
             </div>
           </Link>
+          <Link href="/tags">
+            <div
+              className={`${font.className} text-xl dark:text-amber-50 ${
+                pathname === "/tags"
+                  ? "text-purple-500 dark:text-purple-500"
+                  : "border-transparent hover:text-purple-500  dark:hover:text-purple-500"
+              }`}
+            >
+              Categorias
+            </div>
+          </Link>
           <Link href="/about">
             <div
-              className={`${font.className} text-2xl dark:text-amber-50  ${
+              className={`${font.className} text-xl dark:text-amber-50  ${
                 pathname === "/about"
                   ? "text-purple-500 dark:text-purple-500"
                   : "border-transparent hover:text-purple-500 dark:hover:text-purple-500"
@@ -97,6 +108,44 @@ const Navbar = () => {
             >
               <FaTimes />
             </button>
+           
+            <Link href="/tags/criticas">
+              <div
+                className={`${font.className} text-2xl my-4 ${
+                  pathname === "/tags/criticas"
+                    ? "text-purple-500"
+                    : "text-neutral-900 dark:text-amber-50 hover:text-purple-500"
+                }`}
+                onClick={toggleMenu}
+              >
+                Criticas
+              </div>
+            </Link>
+            <Link href="/tags/artigos">
+              <div
+                className={`${font.className} text-2xl my-4 ${
+                  pathname === "/tags/artigos"
+                    ? "text-purple-500"
+                    : "text-neutral-900 dark:text-amber-50 hover:text-purple-500"
+                }`}
+                onClick={toggleMenu}
+              >
+                Artigos
+              </div>
+            </Link>
+            <Link href="/tags/meus-filmes">
+              <div
+                className={`${font.className} text-2xl my-4 ${
+                  pathname === "/tags/meus-filmes"
+                    ? "text-purple-500"
+                    : "text-neutral-900 dark:text-amber-50 hover:text-purple-500"
+                }`}
+                onClick={toggleMenu}
+              >
+                Meus
+                <span> Filmes</span>
+              </div>
+            </Link>
             <Link href="/tags">
               <div
                 className={`${font.className} text-2xl my-4 ${
@@ -107,31 +156,6 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Categorias
-              </div>
-            </Link>
-            <Link href="/tags/terror">
-              <div
-                className={`${font.className} text-2xl my-4 ${
-                  pathname === "/tags/terror"
-                    ? "text-purple-500"
-                    : "text-neutral-900 dark:text-amber-50 hover:text-purple-500"
-                }`}
-                onClick={toggleMenu}
-              >
-                Criticas
-              </div>
-            </Link>
-            <Link href="/about">
-              <div
-                className={`${font.className} text-2xl my-4 ${
-                  pathname === "/about"
-                    ? "text-purple-500"
-                    : "text-neutral-900 dark:text-amber-50 hover:text-purple-500"
-                }`}
-                onClick={toggleMenu}
-              >
-                Meus
-                <span> Filmes</span>
               </div>
             </Link>
             <Link href="/about">

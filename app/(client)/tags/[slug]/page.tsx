@@ -35,7 +35,7 @@ const page = async ({ params }: Params) => {
   const posts: Array<Post> = await getPostsByTag(params.slug);
   return (
     <div>
-      <Header title={`#${params?.slug}`} tags />
+      <Header title={`${params?.slug}`} tags />
       <div>
         {posts?.length > 0 &&
           posts?.map((post) => <PostComponent key={post?._id} post={post} />)}
