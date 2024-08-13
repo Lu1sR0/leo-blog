@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { ThemeProvider } from "next-themes";
 import { Provider } from "../utils/Provider";
+import { Analytics } from "@vercel/analytics/react"
 
 //const inter = Inter({ subsets: ["latin"] });
 const Arvore = Arvo({
