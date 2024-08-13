@@ -42,6 +42,7 @@ export default function RootLayout({
           <Navbar />
           <main className="mx-auto max-w-5xl px-6">{children}</main>
         </Provider>
+        <Analytics/>
       </body>
     </html>
   );
